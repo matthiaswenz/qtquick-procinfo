@@ -8,8 +8,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     CPUInfoReader reader;
-
-    qWarning(reader.readCPUInfo().toLatin1());
+    qDebug(reader.readCPUInfo().toUtf8());
 
     qmlRegisterType<CPUInfoReader>("procinfo", 1, 0, "CPUInfoReader");
 
