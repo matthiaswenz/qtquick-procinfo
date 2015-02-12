@@ -23,7 +23,7 @@ QString CPUInfoReader::readCPUInfo()
     p.start(cmd);
     if (!p.waitForFinished(500))
     {
-        return "";
+        return "No cpu information available.";
     }
     QString result = QString(p.readAllStandardOutput());
 
