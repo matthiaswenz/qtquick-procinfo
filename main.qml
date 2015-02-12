@@ -12,5 +12,6 @@ ApplicationWindow {
     MainForm {
         anchors.fill: parent
         refreshButton.onClicked: infoText.text = qsTr("hello")
+        // TODO: once CPUInfoReader import works, show the result here
     }
 }
